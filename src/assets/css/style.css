@@ -1,3 +1,129 @@
+.header {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-logo {
+  @import url("https://font.googleapis.com/css2?family=Pacifico&display=swap");
+  font-family: "Pacifico", cursive;
+  display: inline-block;
+  width: 120px;
+  font-size: 3rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.562);
+}
+.header__nav-nav {
+  width: calc(100% - 120px);
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+  cursor: pointer;
+  text-align: center;
+}
+.header__nav-nav-link {
+  width: 75px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.header__nav-nav-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.header__nav-nav-btn {
+  background-color: #26ae61;
+  border: 2px solid #18ab29;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 9px 14px;
+  width: 150px;
+  color: #ffffff;
+}
+.header__nav-nav-btn:hover {
+  background-color: #27b263;
+  color: #ffffff;
+}
 
+.green {
+  display: inline-block;
+  color: green;
+  animation: pulse 1s linear infinite;
+  -webkit-animation: pulse 1s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 520px) {
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header__nav-nav {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__nav-nav-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .header__nav-logo {
+    width: 120px;
+    font-size: 2.7rem;
+    margin-bottom: 5px;
+  }
+
+  .hero-body {
+    padding: 5px;
+  }
+  .hero-body h1 {
+    font-size: 3.5rem;
+  }
+  .hero-body p {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 0) and (max-width: 840px) {
+  .hero-body {
+    width: 99%;
+    text-align: center;
+  }
+  .hero-body p {
+    width: 419px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 300px) {
+  .hero-body h1 {
+    font-size: 3.2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
