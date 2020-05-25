@@ -1,7 +1,7 @@
 import React from 'react';
 import HEROBG from '../assets/img/hero-bg1.png';
 
-const hero = () => (
+const hero = (props) => (
   <div className="hero">
     <div className="hero__body">
       <h1 className="heading-one">FIND YOUR DREAM JOB</h1>
@@ -11,7 +11,10 @@ const hero = () => (
         Vestibulum congue posuere lacus,
         id tincidunt nisi porta sit amet.
       </p>
-      <button className="signup" type="button">Sign Up</button>
+      <button
+        onClick={props.showSignupForm}
+        className="signup-button"
+        type="button">Sign Up</button>
       <form
         action=""
         id="search"

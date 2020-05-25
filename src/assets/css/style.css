@@ -79,12 +79,13 @@
 }
 .hero {
   position: relative;
+  z-index: 6;
   width: 100%;
   height: 500px;
   padding: 0 20px;
   display: flex;
 }
-.hero .signup {
+.hero .signup-button {
   width: 140px;
   height: 55px;
   background: #0554f2;
@@ -94,13 +95,13 @@
   margin-top: 20px;
   font-weight: bold;
 }
-.hero .signup:hover {
+.hero .signup-button:hover {
   background: #1662fa;
 }
-.hero .signup:active {
+.hero .signup-button:active {
   font-size: 1.66rem;
 }
-.hero .signup:active, .hero .signup:focus {
+.hero .signup-button:active, .hero .signup-button:focus {
   outline: none;
   border: none;
 }
@@ -370,6 +371,157 @@
   font-size: 1.2rem;
   word-spacing: 1px;
   opacity: 0.9;
+}
+
+.signup {
+  width: 450px;
+  height: 100%;
+  margin: auto;
+  margin-top: 5px;
+  z-index: 30;
+}
+.signup__header {
+  color: #ffffff;
+  background: #26ae61;
+  padding: 10px 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.signup__header h3 {
+  width: calc(100% - 60px);
+  font-size: 2.8rem;
+}
+.signup__header .signup-close {
+  width: 60px;
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.signup h4 {
+  font-size: 2.3rem;
+  padding: 20px 2px;
+}
+.signup form {
+  background: #ffffff;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
+.signup form label {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  width: 90% !important;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.signup form input:not([type=submit]) {
+  border: none;
+  border-bottom: 1px solid black;
+  height: 50px;
+  width: 90%;
+  padding: 5px 9px;
+  margin-bottom: 30px;
+}
+.signup form input:not([type=submit]):focus {
+  outline: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+.signup form input:not([type=submit]):hover::-webkit-input-placeholder {
+  padding-left: 2px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.signup form select {
+  border: none;
+  border-bottom: 1px solid black;
+  height: 50px;
+  width: 90%;
+  padding: 5px 9px;
+  margin-bottom: 30px;
+}
+
+.personal-info,
+.security-info,
+.job-info {
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+}
+.personal-info button[data-type=next],
+.personal-info button[type=submit],
+.security-info button[data-type=next],
+.security-info button[type=submit],
+.job-info button[data-type=next],
+.job-info button[type=submit] {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background: #26ae61;
+  color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.personal-info button[data-type=next]:hover,
+.personal-info button[type=submit]:hover,
+.security-info button[data-type=next]:hover,
+.security-info button[type=submit]:hover,
+.job-info button[data-type=next]:hover,
+.job-info button[type=submit]:hover {
+  background: #2bc36d;
+}
+.personal-info button[data-type=next]:disabled,
+.personal-info button[type=submit]:disabled,
+.security-info button[data-type=next]:disabled,
+.security-info button[type=submit]:disabled,
+.job-info button[data-type=next]:disabled,
+.job-info button[type=submit]:disabled {
+  background: grey;
+  opacity: 0.4;
+}
+.personal-info button[data-type=back],
+.security-info button[data-type=back],
+.job-info button[data-type=back] {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background: red;
+  color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.personal-info button[data-type=back]:hover,
+.security-info button[data-type=back]:hover,
+.job-info button[data-type=back]:hover {
+  background: #ff1a1a;
+}
+
+#error-message {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  display: none;
+}
+#error-message p {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 859px) {

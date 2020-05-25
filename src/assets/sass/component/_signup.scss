@@ -1,0 +1,139 @@
+.signup {
+   width: 450px;
+   height: 100%;
+   margin: auto;
+   margin-top: 5px;
+   z-index: 30;
+
+   &__header {
+      color: $white;
+      background: $green;
+      padding: 10px 5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      h3 {
+         width: calc(100% - 60px);
+         font-size: 2.8rem;
+      }
+
+      .signup-close {
+         width: 60px;
+         font-size: 3rem;
+         cursor: pointer;
+         font-weight: bold;
+      }
+   }
+
+   h4 {
+      font-size: 2.3rem;
+      padding: 20px 2px;
+   }
+
+   form {
+      background: $white;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 45px;
+
+      label {
+         display: inline-block;
+         font-weight: bold;
+         padding: 10px;
+         width: 90% !important;
+         font-size: 1.4rem;
+         text-align: left;
+      }
+
+      input:not([type="submit"]) {
+         border: none;
+         border-bottom: 1px solid black;
+         height: 50px;
+         width: 90%;
+         padding: 5px 9px;
+         margin-bottom: 30px;
+
+         &:focus {
+            outline: none;
+            box-shadow: none;
+            background: rgba(0, 0, 0, 0.1);
+         }
+
+         &:hover::-webkit-input-placeholder {
+            padding-left: 2px;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+         }
+      }
+
+      select {
+         border: none;
+         border-bottom: 1px solid black;
+         height: 50px;
+         width: 90%;
+         padding: 5px 9px;
+         margin-bottom: 30px;
+      }
+   }
+}
+
+.personal-info,
+.security-info,
+.job-info {
+   width: 100%;
+   text-align: left;
+   padding-left: 10px;
+
+   button[data-type="next"],
+   button[type="submit"] {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background: $green;
+      color: $white;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      &:hover {
+         background: lighten($green, 5%);
+      }
+
+      &:disabled {
+         background: grey;
+         opacity: 0.4;
+      }
+   }
+
+   button[data-type="back"] {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background: red;
+      color: $white;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: 8px;
+
+      &:hover {
+         background: lighten(red, 5%);
+      }
+   }
+}
+
+#error-message {
+   margin-top: -20px;
+   margin-bottom: 20px;
+   display: none;
+
+   p {
+      color: red;
+      font-size: 1.2rem;
+      font-weight: bold;
+   }
+}
