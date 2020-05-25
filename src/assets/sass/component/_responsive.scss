@@ -122,6 +122,20 @@
    }
 }
 
+@media (max-width: 600px) {
+   .footer {
+      flex-direction: column;
+
+      &__logo {
+         margin-bottom: 10px;
+      }
+
+      &__links {
+         width: 100%;
+      }
+   }
+}
+
 @media (max-width: 520px) {
    .heading-two {
       font-size: 3.2rem !important;
@@ -168,6 +182,20 @@
                margin-bottom: 15px;
                width: 100%;
             }
+         }
+      }
+   }
+
+   .footer {
+      h1 {
+         font-size: 3.5rem;
+      }
+
+      &__links {
+         flex-direction: column;
+
+         ul:not(:last-child) {
+            margin-bottom: 30px;
          }
       }
    }
