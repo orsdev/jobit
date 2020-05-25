@@ -1,3 +1,38 @@
+@media (max-width: 859px) {
+   .jobs {
+      &__board {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+
+         &-item {
+            display: flex;
+            width: 100%;
+
+            &-left {
+               width: calc(100% - 150px);
+            }
+
+            &-right {
+               width: 140px;
+               margin-left: 10px;
+
+               ul {
+                  li {
+                     width: 100%;
+                  }
+
+                  a {
+                     padding-top: 15px;
+                     padding-bottom: 15px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
 @media (max-width: 800px) {
    .hero {
       position: relative;
@@ -103,11 +138,15 @@
    }
 }
 
-@media (max-width: 300px) {
-   .hero {
-      &-body {
-         h1 {
-            font-size: 3.2rem;
+@media (max-width: 420px) {
+   .jobs {
+      &__board {
+         &-item {
+            flex-direction: column;
+
+            &-left {
+               margin-bottom: 15px;
+            }
          }
       }
    }
