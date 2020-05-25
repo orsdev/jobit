@@ -11,6 +11,7 @@ const hero = () => (
         Vestibulum congue posuere lacus,
         id tincidunt nisi porta sit amet.
       </p>
+      <button className="signup" type="button">Sign Up</button>
       <form
         action=""
         id="search"

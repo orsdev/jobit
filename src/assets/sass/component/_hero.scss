@@ -5,6 +5,31 @@
    padding: 0 20px;
    display: flex;
 
+   .signup {
+      width: 140px;
+      height: 55px;
+      background: $color-1;
+      color: $white;
+      border: none;
+      font-size: 1.7rem;
+      margin-top: 20px;
+      font-weight: bold;
+
+      &:hover {
+         background: lighten($color-1, 5%);
+      }
+
+      &:active {
+         font-size: 1.66rem;
+      }
+
+      &:active,
+      &:focus {
+         outline: none;
+         border: none;
+      }
+   }
+
    &__img {
       width: 50%;
 
@@ -18,7 +43,7 @@
       width: 50%;
       padding-top: 100px;
 
-      h2 {
+      h1 {
          font-size: 3.8rem;
          color: lighten($black, 15%);
       }

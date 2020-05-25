@@ -200,3 +200,15 @@
       }
    }
 }
+
+@media (max-width: 320px) {
+   .header {
+      &__nav-nav {
+         flex-direction: column;
+
+         li:not(:last-child) {
+            margin-bottom: 6px;
+         }
+      }
+   }
+}

@@ -84,6 +84,26 @@
   padding: 0 20px;
   display: flex;
 }
+.hero .signup {
+  width: 140px;
+  height: 55px;
+  background: #0554f2;
+  color: #ffffff;
+  border: none;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.hero .signup:hover {
+  background: #1662fa;
+}
+.hero .signup:active {
+  font-size: 1.66rem;
+}
+.hero .signup:active, .hero .signup:focus {
+  outline: none;
+  border: none;
+}
 .hero__img {
   width: 50%;
 }
@@ -95,7 +115,7 @@
   width: 50%;
   padding-top: 100px;
 }
-.hero__body h2 {
+.hero__body h1 {
   font-size: 3.8rem;
   color: #595959;
 }
@@ -510,6 +530,14 @@
   }
   .footer__links ul:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .header__nav-nav {
+    flex-direction: column;
+  }
+  .header__nav-nav li:not(:last-child) {
+    margin-bottom: 6px;
   }
 }
 
