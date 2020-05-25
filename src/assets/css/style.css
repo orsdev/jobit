@@ -379,6 +379,7 @@
   margin: auto;
   margin-top: 5px;
   z-index: 30;
+  overflow-y: scroll;
 }
 .signup__header {
   color: #ffffff;
@@ -663,6 +664,10 @@
 
   .hero__body {
     width: 90%;
+  }
+
+  .signup {
+    width: 95%;
   }
 }
 @media (max-width: 420px) {

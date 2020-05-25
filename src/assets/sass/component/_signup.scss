@@ -4,6 +4,7 @@
    margin: auto;
    margin-top: 5px;
    z-index: 30;
+   overflow-y: scroll;
 
    &__header {
       color: $white;
