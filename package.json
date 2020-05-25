@@ -17,7 +17,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint-check": "eslint src",
-    "lint-fix": "eslint src --fix"
+    "lint-fix": "eslint src --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
