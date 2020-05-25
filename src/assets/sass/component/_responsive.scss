@@ -37,8 +37,6 @@
    .hero {
       position: relative;
       display: inline-block;
-      overflow: hidden;
-      height: 450px;
 
       &__img {
          width: 100%;
@@ -206,6 +204,23 @@
 }
 
 @media (max-width: 320px) {
+.hero {
+	margin-top: 20px;
+}
+
+.heading-one {
+	font-size: 2.8rem !important;
+}
+
+.heading-two {
+	font-size: 2.4rem !important;
+}
+
+
+.jobs {
+	margin-top: 60px;
+}
+
    .header {
       &__nav-nav {
          flex-direction: column;
