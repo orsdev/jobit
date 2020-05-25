@@ -3,7 +3,7 @@ import React from 'react';
 const jobs = () => {
   return (
     <div className="jobs">
-      <h1> Recent Jobs </h1>
+      <h2 className="heading-two"> Recent Jobs </h2>
       <div className="jobs__board">
         <div className="jobs__board-item">
           <div className="jobs__board-item-left">

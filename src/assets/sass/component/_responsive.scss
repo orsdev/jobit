@@ -66,11 +66,6 @@
          -ms-transform: translate(-50%, -50%);
          -o-transform: translate(-50%, -50%);
 
-         h1 {
-            font-size: 3.5rem;
-            color: $black;
-         }
-
          p {
             font-weight: bold;
             opacity: 0.8;
@@ -106,7 +101,32 @@
    }
 }
 
+@media (max-width: 830px) {
+   .about {
+      display: inline-block;
+      position: relative;
+      margin-top: 50px;
+
+      &__img {
+         width: 100%;
+         position: absolute;
+         top: 0;
+         opacity: 0.7;
+      }
+
+      &__body {
+         width: 100%;
+         position: absolute;
+         top: 0;
+      }
+   }
+}
+
 @media (max-width: 520px) {
+   .heading-two {
+      font-size: 3.2rem !important;
+   }
+
    .header {
       &__nav {
          display: flex;
@@ -146,6 +166,7 @@
 
             &-left {
                margin-bottom: 15px;
+               width: 100%;
             }
          }
       }

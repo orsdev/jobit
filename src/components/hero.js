@@ -4,7 +4,7 @@ import HEROBG from '../assets/img/hero-bg1.png';
 const hero = () => (
   <div className="hero">
     <div className="hero__body">
-      <h1>FIND YOUR DREAM JOB</h1>
+      <h1 className="heading-one">FIND YOUR DREAM JOB</h1>
       <p>
         Aliquam vestibulum cursus felis.
         In iaculis iaculis sapien ac condimentum.
