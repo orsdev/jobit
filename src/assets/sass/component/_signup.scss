@@ -1,10 +1,10 @@
 .signup {
    width: 450px;
-   height: 100%;
    margin: auto;
    margin-top: 5px;
    z-index: 30;
    overflow-y: scroll;
+   height: 100%;
 
    &__header {
       color: $white;
@@ -36,7 +36,8 @@
       background: $white;
       text-align: center;
       padding-top: 15px;
-      padding-bottom: 45px;
+      padding-bottom: 15px;
+      height: 100%;
 
       label {
          display: inline-block;
