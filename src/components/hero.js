@@ -14,7 +14,10 @@ const hero = (props) => (
       <button
         onClick={props.showSignupForm}
         className="signup-button"
-        type="button">Sign Up</button>
+        type="button"
+      >
+        Sign Up
+      </button>
       <form
         action=""
         id="search"

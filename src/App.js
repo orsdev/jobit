@@ -16,24 +16,29 @@ function App() {
   };
 
   const closeSignupForm = (e) => {
-    if (e.target.id === "backdrop"
-      || e.target.id === "signup-close") {
+    if (e.target.id === 'backdrop'
+      || e.target.id === 'signup-close') {
       setSignupForm(false);
     }
   };
 
   return (
     <div className="app">
-      {signupForm ?
-        <Backdrop
-          closeSignupForm={closeSignupForm}>
-          <Signup
-            closeSignupForm={closeSignupForm} />
-        </Backdrop>
+      {signupForm
+        ? (
+          <Backdrop
+            closeSignupForm={closeSignupForm}
+          >
+            <Signup
+              closeSignupForm={closeSignupForm}
+            />
+          </Backdrop>
+        )
         : null}
       <Header />
       <Hero
-        showSignupForm={showSignupForm} />
+        showSignupForm={showSignupForm}
+      />
       <Jobs />
       <About />
       <Footer />
