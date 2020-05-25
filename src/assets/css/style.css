@@ -154,6 +154,119 @@
   outline: none;
 }
 
+.jobs {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.jobs h1 {
+  font-size: 4rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+.jobs__board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.jobs__board-item:not(:last-child) {
+  margin-right: 20px;
+}
+.jobs__board-item {
+  display: flex;
+  align-items: center;
+  outline: 1px solid rgba(185, 184, 184, 0.8);
+  width: 400px;
+  padding: 40px 10px;
+  margin-top: 40px;
+}
+.jobs__board-item-left {
+  width: calc(100% - 100px);
+}
+.jobs__board-item-left h3 {
+  font-size: 2.2rem;
+  color: #333333;
+}
+.jobs__board-item-left a {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0554f2;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.jobs__board-item-left ul {
+  list-style: none;
+}
+.jobs__board-item-left ul li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 3px 1px;
+  color: #414853;
+}
+.jobs__board-item-right {
+  width: 100px;
+}
+.jobs__board-item-right ul {
+  list-style: none;
+}
+.jobs__board-item-right ul li {
+  display: block;
+  font-size: 14px;
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+  border-image-slice: 1;
+  text-align: center;
+  width: 95px;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+.jobs__board-item-right ul li:last-child {
+  border: 1px solid #38a745;
+  background-image: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+}
+.jobs__board-item-right ul a {
+  text-align: center;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+.jobs__board-item-right ul a.job-type {
+  color: white;
+}
+.jobs__board-item-right .apply:hover {
+  background: #26ae61;
+}
+.jobs__board-item-right .apply:hover a {
+  color: #ffffff;
+}
+.jobs__footer {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.jobs__footer button {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #38a745;
+  background-image: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+  border-image-slice: 1;
+  text-align: center;
+  width: 150px;
+  padding: 15px 6px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.jobs__footer button:hover {
+  background: #3caf49;
+}
+
 @media (max-width: 800px) {
   .hero {
     position: relative;

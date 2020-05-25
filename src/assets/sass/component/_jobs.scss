@@ -1,0 +1,141 @@
+.jobs {
+   width: 100%;
+   padding: 10px;
+   margin-top: 20px;
+
+   h1 {
+      font-size: 4rem;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      width: 100%;
+   }
+
+   &__board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-item:not(:last-child) {
+         margin-right: 20px;
+      }
+
+      &-item {
+         display: flex;
+         align-items: center;
+         outline: 1px solid rgba(185, 184, 184, 0.8);
+         width: 400px;
+         padding: 40px 10px;
+         margin-top: 40px;
+
+         &-left {
+            width: calc(100% - 100px);
+            h3 {
+               font-size: 2.2rem;
+               color: $black;
+            }
+
+            a {
+               display: inline-block;
+               font-size: 1.6rem;
+               font-weight: bold;
+               color: $color-1;
+               text-decoration: none;
+               padding-top: 5px;
+               padding-bottom: 5px;
+            }
+
+            ul {
+               list-style: none;
+
+               li {
+                  font-size: 1.3rem;
+                  font-weight: bold;
+                  padding: 3px 1px;
+                  color: #414853;
+               }
+            }
+         }
+
+         &-right {
+            width: 100px;
+
+            ul {
+               list-style: none;
+
+               li {
+                  display: block;
+                  font-size: 14px;
+                  border: 1px solid;
+                  border-image-source: linear-gradient(
+                     90deg,
+                     #38a745 0%,
+                     #4cce5b 63%
+                  );
+                  border-image-slice: 1;
+                  text-align: center;
+                  width: 95px;
+                  margin-bottom: 10px;
+                  margin-left: auto;
+               }
+
+               li:last-child {
+                  border: 1px solid #38a745;
+                  background-image: linear-gradient(
+                     90deg,
+                     #38a745 0%,
+                     #4cce5b 63%
+                  );
+               }
+
+               a {
+                  text-align: center;
+                  display: inline-block;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  text-decoration: none;
+                  color: $black;
+                  font-weight: bold;
+               }
+
+               a.job-type {
+                  color: white;
+               }
+            }
+
+            .apply {
+               &:hover {
+                  background: $green;
+               }
+
+               &:hover a {
+                  color: $white;
+               }
+            }
+         }
+      }
+   }
+
+   &__footer {
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+
+      button {
+         display: inline-block;
+         font-size: 14px;
+         border: 1px solid #38a745;
+         background-image: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
+         border-image-slice: 1;
+         text-align: center;
+         width: 150px;
+         padding: 15px 6px;
+         color: $white;
+         font-weight: bold;
+
+         &:hover {
+            background: #3caf49;
+         }
+      }
+   }
+}
