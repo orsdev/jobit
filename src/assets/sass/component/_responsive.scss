@@ -22,7 +22,7 @@
                      width: 100%;
                   }
 
-                  a {
+                  button {
                      padding-top: 15px;
                      padding-bottom: 15px;
                   }
@@ -103,7 +103,6 @@
 
 @media (max-width: 830px) {
    .about {
-      // display: inline-block;
       flex-direction: column;
       position: relative;
       margin-top: 50px;

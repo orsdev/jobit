@@ -14,14 +14,16 @@ const hero = () => (
       <form
         action=""
         id="search"
-        onSubmit={(e) => { e.preventDefault() }}>
+        onSubmit={(e) => { e.preventDefault(); }}
+      >
         <div className="form-group">
           <input
             className="form-control"
             type="text"
             name="title"
             placeholder="Job Title or Company Name"
-            required />
+            required
+          />
         </div>
         <div className="form-group">
           <input
@@ -29,12 +31,17 @@ const hero = () => (
             type="text"
             name="location"
             placeholder="City or State"
-            required />
+            required
+          />
         </div>
         <div className="form-search-btn">
           <button
             type="submit"
-            className="search-btn"> Search </button>
+            className="search-btn"
+          >
+            {' '}
+            Search
+          </button>
         </div>
       </form>
     </div>

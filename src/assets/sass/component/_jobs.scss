@@ -35,12 +35,13 @@
                color: $black;
             }
 
-            a {
+            button {
+               border: none;
+               background: none;
                display: inline-block;
                font-size: 1.6rem;
                font-weight: bold;
                color: $color-1;
-               text-decoration: none;
                padding-top: 5px;
                padding-bottom: 5px;
             }
@@ -88,17 +89,18 @@
                   );
                }
 
-               a {
+               button {
+                  border: none;
                   text-align: center;
                   display: inline-block;
                   padding-top: 10px;
                   padding-bottom: 10px;
-                  text-decoration: none;
                   color: $black;
+                  background: transparent;
                   font-weight: bold;
                }
 
-               a.job-type {
+               button.job-type {
                   color: white;
                }
             }
@@ -108,7 +110,7 @@
                   background: $green;
                }
 
-               &:hover a {
+               &:hover button {
                   color: $white;
                }
             }

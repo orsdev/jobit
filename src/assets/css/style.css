@@ -189,12 +189,13 @@
   font-size: 2.2rem;
   color: #333333;
 }
-.jobs__board-item-left a {
+.jobs__board-item-left button {
+  border: none;
+  background: none;
   display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
   color: #0554f2;
-  text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -228,22 +229,23 @@
   border: 1px solid #38a745;
   background-image: linear-gradient(90deg, #38a745 0%, #4cce5b 63%);
 }
-.jobs__board-item-right ul a {
+.jobs__board-item-right ul button {
+  border: none;
   text-align: center;
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-decoration: none;
   color: #333333;
+  background: transparent;
   font-weight: bold;
 }
-.jobs__board-item-right ul a.job-type {
+.jobs__board-item-right ul button.job-type {
   color: white;
 }
 .jobs__board-item-right .apply:hover {
   background: #26ae61;
 }
-.jobs__board-item-right .apply:hover a {
+.jobs__board-item-right .apply:hover button {
   color: #ffffff;
 }
 .jobs__footer {
@@ -331,7 +333,7 @@
   .jobs__board-item-right ul li {
     width: 100%;
   }
-  .jobs__board-item-right ul a {
+  .jobs__board-item-right ul button {
     padding-top: 15px;
     padding-bottom: 15px;
   }
