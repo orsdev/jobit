@@ -103,21 +103,22 @@
 
 @media (max-width: 830px) {
    .about {
-      display: inline-block;
+      // display: inline-block;
+      flex-direction: column;
       position: relative;
       margin-top: 50px;
 
       &__img {
          width: 100%;
-         position: absolute;
-         top: 0;
          opacity: 0.7;
+         order: 2;
+         margin-top: -220px;
       }
 
       &__body {
          width: 100%;
-         position: absolute;
-         top: 0;
+         order: 1;
+         z-index: 5;
       }
    }
 }
