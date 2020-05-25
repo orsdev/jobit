@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jobit/static/css/main.3d9421d2.chunk.css",
+    "main.css": "/jobit/static/css/main.85d532f1.chunk.css",
     "main.js": "/jobit/static/js/main.4df4921b.chunk.js",
     "main.js.map": "/jobit/static/js/main.4df4921b.chunk.js.map",
     "runtime-main.js": "/jobit/static/js/runtime-main.cf0afc35.js",
@@ -8,9 +8,9 @@
     "static/js/2.e07c5b51.chunk.js": "/jobit/static/js/2.e07c5b51.chunk.js",
     "static/js/2.e07c5b51.chunk.js.map": "/jobit/static/js/2.e07c5b51.chunk.js.map",
     "index.html": "/jobit/index.html",
-    "precache-manifest.75a7bc7f3bd1e5a1ecec6a763963e0ed.js": "/jobit/precache-manifest.75a7bc7f3bd1e5a1ecec6a763963e0ed.js",
+    "precache-manifest.3efd7c17c86eb5cb9d9acf8b13cb8ac5.js": "/jobit/precache-manifest.3efd7c17c86eb5cb9d9acf8b13cb8ac5.js",
     "service-worker.js": "/jobit/service-worker.js",
-    "static/css/main.3d9421d2.chunk.css.map": "/jobit/static/css/main.3d9421d2.chunk.css.map",
+    "static/css/main.85d532f1.chunk.css.map": "/jobit/static/css/main.85d532f1.chunk.css.map",
     "static/js/2.e07c5b51.chunk.js.LICENSE.txt": "/jobit/static/js/2.e07c5b51.chunk.js.LICENSE.txt",
     "static/media/hero-bg1.png": "/jobit/static/media/hero-bg1.4e848729.png",
     "static/media/hero-bg2.png": "/jobit/static/media/hero-bg2.f54e2439.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.cf0afc35.js",
     "static/js/2.e07c5b51.chunk.js",
-    "static/css/main.3d9421d2.chunk.css",
+    "static/css/main.85d532f1.chunk.css",
     "static/js/main.4df4921b.chunk.js"
   ]
 }
